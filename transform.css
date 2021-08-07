@@ -1,0 +1,43 @@
+p {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  border: 1px solid #2c3e50;
+}
+
+p.move-right {
+  background-color: blue;
+  /* transform: translateX(100px); */
+}
+
+p.move-down {
+  background-color: lightgreen;
+  /* transform: translateY(20px); */
+}
+
+p.move-right:hover,
+p.move-down:hover {
+  transform: translate(20px, 20px);
+}
+
+.transformed {
+  background: blueviolet;
+  /* transform: scale(2); */
+}
+
+.transformed:hover {
+  background: blanchedalmond;
+  transform: scale(2);
+  transform-origin: left center;
+}
+
+.rotation {
+  background: blanchedalmond;
+  transform: rotate(45deg);
+}
+
+.rotation2 {
+  background: blanchedalmond;
+  transform: rotate(180deg) scale(0.5);
+  transform-origin: right bottom;
+}
