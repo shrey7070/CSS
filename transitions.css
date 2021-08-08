@@ -1,0 +1,43 @@
+p.box {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  border: 1px solid #2c3e50;
+  position: relative;
+}
+p.animated:hover {
+  left: 10px;
+  transform: scale(1.2);
+  transform-origin: top bottom;
+  background-color: brown;
+  text-align: center;
+  border-radius: 50%;
+  /* Order does matter */
+  transition-property: background-color, transform, border-radius;
+  transition-duration: 1s, 2s, 3s;
+}
+.animated-delay {
+  transition-property: transform;
+  transition-duration: 5s;
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: ease-out; */
+  /* transition-timing-function: linear; */
+}
+.animated-delay:hover {
+  border-radius: 50%;
+  background-color: violet;
+  transition-delay: 1s, 2s, 2s;
+  transition-property: background-color, transform, border-radius;
+  transition-duration: 1s, 2s, 1s;
+}
+
+.box {
+  transform: translate(300px);
+}
+
+/* all in one transition */
+.animated-inone {
+  transition: background-color 2s linear, transform 2s ease-in-out;
+  background-color: #2c3e50;
+  /* property   duration  timing-function  delay*/
+}
