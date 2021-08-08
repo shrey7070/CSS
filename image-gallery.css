@@ -1,0 +1,40 @@
+.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-width: 400px;
+  max-width: 300px;
+  text-align: center;
+  background-color: #16a085;
+}
+
+.item-blue {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div.item:hover img:first-child {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+div.item * {
+  transition: all 0.5s ease-in-out;
+}
+
+.icon {
+  position: absolute;
+  width: 60px;
+  top: -20%;
+  left: 110%;
+  height: 60px;
+  line-height: 60px;
+  transform: translate(-450%, 200%) scale(0);
+}
+
+div.item:hover .icon {
+  transform: translate(-450%, 200%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
