@@ -11,3 +11,7 @@
 # Transform without animation
 
 <img src="https://github.com/shrey7070/CSS/blob/main/Transform.gif" width="900" />
+
+# Transform with animation
+
+<img src="https://github.com/shrey7070/CSS/blob/main/Transitions.gif" width="900" />
